@@ -63,17 +63,11 @@ li {
 /* Styles for instagram icon shown on desktop devices */
 
 .nav-insta {
-  font-size: 35px;
   display: inline-block;
   justify-content: center;
   align-content: center;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 40px;
-
-  &:hover {
-    color: $hotpink;
-  }
 }
 
 /* Hidden nav hamburger menu only shown on mobile devices */
@@ -156,7 +150,7 @@ footer {
   }
 }
 
-/* Mobile Media Queries for hidden  nav menu items */
+/* Mobile Media Queries for hidden nav menu items */
 
 @media (max-width: 800px) {
   nav .mainMenu {
@@ -186,14 +180,21 @@ footer {
   }
 
   nav .mainMenu li a:hover {
-    background: none;
-    color: $hotpink;
+    background: $hotpink;
     font-size: 1.6rem;
   }
 
   .icon i {
     display: inline-block;
     padding: 10px;
+
+    a {
+      color: white;
+
+      &:hover {
+        background: $hotpink;
+      }
+    }
   }
 
   /* Hide desktop instagram icon */
