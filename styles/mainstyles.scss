@@ -3,11 +3,7 @@
 $hotpink: #ff0098;
 $navpink: #ff64c1;
 
-@import "./indexstyles";
-
-/* Reset Styles */
-
-* {
+@import "./mediaqueries" /* Reset Styles */ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,16 +40,6 @@ header {
   }
 }
 
-.nav-insta {
-  font-size: 30px;
-  display: inline-block;
-  justify-content: center;
-  align-content: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 40px;
-}
-
 nav .mainMenu {
   display: flex;
   list-style: none;
@@ -70,12 +56,32 @@ li {
   margin-right: 30px;
 }
 
+/* Styles for instagram icon shown on desktop devices */
+
+.nav-insta {
+  font-size: 35px;
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
+
+  &:hover {
+    color: $hotpink;
+  }
+}
+
+/* Hidden nav hamburger menu only shown on mobile devices */
+
 nav .openMenu {
   font-size: 2rem;
   margin: 10px;
   display: none;
   cursor: pointer;
 }
+
+/* Hidden "X" icon only shown on mobile devices */
 
 nav .mainMenu .closeMenu,
 .icon i {
@@ -84,9 +90,7 @@ nav .mainMenu .closeMenu,
   cursor: pointer;
 }
 
-.fa-instagram:hover {
-  color: $hotpink;
-}
+/* CALL TO ACTION banner styles */
 
 .cta-banner {
   background: black;
@@ -111,6 +115,8 @@ nav .mainMenu .closeMenu,
   }
 }
 
+/* Secondary back-link nav styles */
+
 .back-link {
   width: 90%;
   margin-left: auto;
@@ -118,51 +124,13 @@ nav .mainMenu .closeMenu,
   margin-top: 30px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  grid-gap: 50px;
-
-  div {
-    h1,
-    h6 {
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    h6 {
-      font-size: 1rem;
-      margin-bottom: 30px;
-    }
-
-    a {
-      color: #707070;
-      &:hover {
-        color: $hotpink;
-      }
-    }
-  }
-
-  img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-}
+/* Footer Styles */
 
 footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   ul {
     list-style: none;
   }
