@@ -145,6 +145,7 @@ footer {
 
   a {
     color: white;
+    text-decoration: none;
     &:hover {
       color: $hotpink;
     }
@@ -155,7 +156,7 @@ footer {
   }
 }
 
-/* Mobile Media Queries */
+/* Mobile Media Queries for hidden  nav menu items */
 
 @media (max-width: 800px) {
   nav .mainMenu {
@@ -190,14 +191,18 @@ footer {
     font-size: 1.6rem;
   }
 
+  .icon i {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  /* Hide desktop instagram icon */
+
   .nav-insta {
     display: none;
   }
 
-  .icon i {
-    display: inline-block;
-    padding: 12px;
-  }
+  /* Mbile banner styles */
 
   .cta-banner {
     margin-left: auto;
@@ -209,7 +214,4 @@ footer {
       margin-bottom: 10px;
     }
   }
-}
-
-@media (max-width: 530px) {
 }
