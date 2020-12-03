@@ -3,7 +3,11 @@
 $hotpink: #ff0098;
 $navpink: #ff64c1;
 
-@import "./mediaqueries" /* Reset Styles */ * {
+@import "./mediaqueries";
+
+/* Reset Styles */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
