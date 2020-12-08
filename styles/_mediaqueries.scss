@@ -1,6 +1,9 @@
 /* MOBILE GRID STYLES */
 
 @media (max-width: 800px) {
+  header {
+    width: 100%;
+  }
   .grid-container {
     min-height: 100%;
     margin-top: 1rem;
@@ -8,11 +11,16 @@
     margin-left: auto;
     margin-right: auto;
     display: grid;
+    gap: 1rem;
     position: relative;
+    border: 2px solid green;
 
     .grid-item {
+      border: 2px solid red;
+      width: 100%;
       text-align: center;
       padding: 1rem;
+      position: relative;
       h3 {
         font-size: 2rem;
         color: $hotpink;
@@ -41,6 +49,10 @@
     .imgBx {
       position: relative;
       margin-top: 1.5rem;
+      width: 300px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
 
       img {
         width: 100%;
