@@ -3,7 +3,6 @@
 @media (max-width: 800px) {
   .grid-container {
     min-height: 100%;
-    border: 3px solid #ff0098;
     margin-top: 1rem;
     width: 90%;
     margin-left: auto;
@@ -12,21 +11,38 @@
     display: grid;
     position: relative;
   }
-  .grid-item {
-    border: 2px solid black;
+  .grid-container .grid-item {
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
   }
-  .grid-item h3 {
-    font-size: 1.5rem;
+  .grid-container .grid-item h3 {
+    font-size: 2rem;
     color: #ff0098;
   }
-  .grid-item p {
+  .grid-container .grid-item a {
+    text-decoration: none;
+    position: relative;
+    color: white;
     margin-top: 1rem;
+    position: relative;
+    display: inline-block;
+    background: #ff0098;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
-  .grid-item img {
+  .grid-container .grid-item a:active {
+    top: 5px;
+  }
+  .grid-container .imgBx {
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  .grid-container .imgBx img {
     width: 100%;
-    margin-top: 1rem;
     height: 100%;
   }
 }
