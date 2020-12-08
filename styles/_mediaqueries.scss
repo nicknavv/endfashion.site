@@ -1,0 +1,33 @@
+/* MOBILE GRID STYLES */
+
+@media (max-width: 800px) {
+  .grid-container {
+    min-height: 100%;
+    border: 3px solid $hotpink;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    position: relative;
+  }
+
+  .grid-item {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    h3 {
+      font-size: 1.5rem;
+      color: $hotpink;
+    }
+    p {
+      margin-top: 1rem;
+    }
+
+    img {
+      width: 100%;
+      margin-top: 1rem;
+      height: 100%;
+    }
+  }
+}

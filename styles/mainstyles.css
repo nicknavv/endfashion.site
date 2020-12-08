@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* MOBILE GRID STYLES */
+@media (max-width: 800px) {
+  .grid-container {
+    min-height: 100%;
+    border: 3px solid #ff0098;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+  }
+  .grid-item {
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+  }
+  .grid-item h3 {
+    font-size: 1.5rem;
+    color: #ff0098;
+  }
+  .grid-item p {
+    margin-top: 1rem;
+  }
+  .grid-item img {
+    width: 100%;
+    margin-top: 1rem;
+    height: 100%;
+  }
+}
+
 /* Reset Styles */
 * {
   margin: 0;
@@ -122,12 +154,14 @@ nav .mainMenu .closeMenu,
   margin-top: 30px;
 }
 
+/* GRID STYLES */
 /* Footer Styles */
 footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 15px;
+  position: absolute;
 }
 
 footer ul {
