@@ -25,6 +25,16 @@
     font-size: 2rem;
     color: #ff0098;
   }
+  .grid-container .grid-item p {
+    position: relative;
+    color: white;
+    margin-top: 1rem;
+    position: relative;
+    background: #ff0098;
+    padding: 1rem;
+    color: white;
+    font-weight: 800;
+  }
   .grid-container .grid-item a {
     text-decoration: none;
     position: relative;
@@ -180,7 +190,6 @@ nav .mainMenu .closeMenu,
   margin-top: 30px;
 }
 
-/* GRID STYLES */
 /* Footer Styles */
 footer {
   background-color: black;

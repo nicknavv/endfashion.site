@@ -24,6 +24,16 @@
         color: $hotpink;
       }
 
+      p {
+        position: relative;
+        color: white;
+        margin-top: 1rem;
+        position: relative;
+        background: $hotpink;
+        padding: 1rem;
+        color: white;
+        font-weight: 800;
+      }
       a {
         text-decoration: none;
         position: relative;
