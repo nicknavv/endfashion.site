@@ -184,6 +184,7 @@ nav .mainMenu .closeMenu,
 /* Footer Styles */
 footer {
   background-color: black;
+  margin-top: 1rem;
   color: white;
   text-align: center;
   padding: 15px;
