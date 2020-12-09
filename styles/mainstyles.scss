@@ -131,24 +131,14 @@ footer {
   text-align: center;
   padding: 15px;
   position: absolute;
-  ul {
-    list-style: none;
-  }
-
-  li {
-    line-height: 40px;
-  }
 
   a {
     color: white;
+    margin-top: 1rem;
     text-decoration: none;
     &:hover {
       color: $hotpink;
     }
-  }
-
-  h4 {
-    margin-top: 10px;
   }
 }
 
