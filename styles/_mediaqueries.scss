@@ -19,6 +19,10 @@
     gap: 1rem;
     position: relative;
 
+    a.contact {
+      text-decoration: underline;
+    }
+
     .grid-item {
       width: 100%;
       text-align: center;
