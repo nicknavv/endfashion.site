@@ -7,6 +7,9 @@
   footer {
     line-height: 2rem;
   }
+  .contact p {
+    background-color: none;
+  }
   /* MOBILE GRID STYLES */
   .grid-container {
     min-height: 100%;
@@ -30,13 +33,17 @@
     color: #ff0098;
   }
   .grid-container .grid-item p {
+    margin: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+  .grid-container .grid-item h4 {
     position: relative;
-    color: white;
+    border: 2px solid #ff0098;
     margin-top: 1rem;
     position: relative;
-    background: #ff0098;
     padding: 1rem;
-    color: white;
+    color: #ff0098;
     font-weight: 800;
   }
   .grid-container .grid-item a {
@@ -191,7 +198,7 @@ nav .mainMenu .closeMenu,
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 /* Footer Styles */
