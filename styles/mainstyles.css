@@ -206,6 +206,14 @@ nav .mainMenu .closeMenu,
   margin-top: 1rem;
 }
 
+.back-link p {
+  color: #000000;
+}
+
+.back-link a {
+  color: #ff0098;
+}
+
 /* Footer Styles */
 footer {
   background-color: black;
