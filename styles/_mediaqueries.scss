@@ -37,6 +37,15 @@
         margin: 0;
         font-weight: 600;
       }
+
+      a.details {
+        text-decoration: underline;
+        color: $hotpink;
+        background: none;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+      }
       h3 {
         font-size: 2rem;
         color: $hotpink;

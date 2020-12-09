@@ -36,6 +36,14 @@
     margin: 0;
     font-weight: 600;
   }
+  .grid-container .grid-item a.details {
+    text-decoration: underline;
+    color: #ff0098;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+  }
   .grid-container .grid-item h3 {
     font-size: 2rem;
     color: #ff0098;
