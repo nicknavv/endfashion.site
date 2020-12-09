@@ -55,7 +55,6 @@
     font-weight: 800;
   }
   .grid-container .grid-item a {
-    text-decoration: none;
     position: relative;
     margin-top: 1rem;
     position: relative;
@@ -63,13 +62,12 @@
     background: #ff0098;
     padding: 1rem;
     color: white;
-    text-decoration: none;
     font-weight: 800;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
   }
   .grid-container .grid-item a:active {
-    top: 5px;
+    top: 6px;
   }
   .grid-container .imgBx {
     position: relative;
