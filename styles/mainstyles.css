@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media (max-width: 800px) {
-  header,
-  footer {
-    width: 100%;
-  }
-  footer {
-    line-height: 2rem;
-  }
   /* MOBILE GRID STYLES */
   .grid-container {
     min-height: 100%;
@@ -100,6 +93,46 @@
     border: 2px solid black;
   }
   .grid-container .imgBx img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 801px) {
+  /* MAIN GRID STYLES */
+  footer {
+    position: absolute;
+  }
+  .grid-container {
+    min-height: 100%;
+    border: 2px solid black;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    -ms-grid-rows: 400px;
+        grid-template-rows: 400px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .grid-item {
+    border: 2px solid green;
+    width: 100%;
+    text-align: center;
+  }
+  .imgBx {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img {
     width: 100%;
     height: 100%;
   }
