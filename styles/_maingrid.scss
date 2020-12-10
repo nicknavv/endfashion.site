@@ -1,17 +1,4 @@
 @media (min-width: 801px) {
-  header {
-    width: 100%;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  nav .mainMenu li a:hover {
-    background: $hotpink;
-    font-size: 1.6rem;
-  }
-
   /* MAIN GRID STYLES */
 
   .grid-container {
@@ -79,5 +66,18 @@
   img {
     width: 100%;
     height: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  nav .mainMenu li a:hover {
+    background: $hotpink;
+    font-size: 1.6rem;
   }
 }

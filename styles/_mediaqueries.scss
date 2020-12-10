@@ -3,17 +3,11 @@
 
   .grid-container {
     min-height: 100%;
-    margin-top: 1rem;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
     display: grid;
     gap: 1rem;
     position: relative;
-
-    a.contact {
-      text-decoration: underline;
-    }
 
     .grid-item {
       width: 100%;
@@ -21,45 +15,6 @@
       padding: 1rem;
       position: relative;
       border: 2px solid black;
-
-      a.contact {
-        text-decoration: underline;
-        color: $hotpink;
-        background: none;
-        padding: 0;
-        margin: 0;
-        font-weight: 600;
-      }
-
-      a.details {
-        text-decoration: underline;
-        color: $hotpink;
-        background: none;
-        padding: 0;
-        margin: 0;
-        font-weight: 600;
-      }
-      h3 {
-        font-size: 2rem;
-        color: $hotpink;
-      }
-
-      a.cta {
-        position: relative;
-        margin-top: 1rem;
-        display: inline-block;
-        background: $hotpink;
-        padding: 1rem;
-        color: white;
-        font-weight: 800;
-        transition: all 0.1s ease-in-out;
-      }
-
-      p {
-        margin-top: 1rem;
-        line-height: 1.5rem;
-        font-weight: 600;
-      }
 
       h4 {
         position: relative;
@@ -70,13 +25,49 @@
         color: $hotpink;
         font-weight: 800;
       }
+
+      h3 {
+        font-size: 2rem;
+        color: $hotpink;
+      }
+
+      p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+      }
+
+      /* "Contact Us" hyperlinlk on Photography page */
+
+      a.contact {
+        text-decoration: underline;
+        color: $hotpink;
+        background: none;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      /* "See details" on One of One item page */
+
+      a.details {
+        text-decoration: underline;
+        color: $hotpink;
+        background: none;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      /* CTA button on mobile */
+
       a.cta {
         position: relative;
         margin-top: 1rem;
         display: inline-block;
         background: $hotpink;
         padding: 1rem;
-        color: white;
+        color: #ffffff;
         font-weight: 800;
         transition: all 0.1s ease-in-out;
 
@@ -85,13 +76,12 @@
         }
       }
     }
-    .imgBx2 {
+
+    .imgBx {
       position: relative;
-      margin-top: 1.5rem;
-      width: 300px;
-      height: 75px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 20rem;
+      height: 20rem;
+      margin: 1rem auto;
       border: 2px solid black;
 
       img {
@@ -100,13 +90,13 @@
         height: 100%;
       }
     }
-    .imgBx {
+
+    .imgBx2 {
       position: relative;
-      margin-top: 1.5rem;
-      width: 300px;
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 20rem;
+      height: 5rem;
+      margin: 1rem auto;
+      border: 2px solid black;
 
       img {
         width: 100%;

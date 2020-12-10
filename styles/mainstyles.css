@@ -3,17 +3,12 @@
   /* MOBILE GRID STYLES */
   .grid-container {
     min-height: 100%;
-    margin-top: 1rem;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
     display: -ms-grid;
     display: grid;
     gap: 1rem;
     position: relative;
-  }
-  .grid-container a.contact {
-    text-decoration: underline;
   }
   .grid-container .grid-item {
     width: 100%;
@@ -21,6 +16,27 @@
     padding: 1rem;
     position: relative;
     border: 2px solid black;
+    /* "Contact Us" hyperlinlk on Photography page */
+    /* "See details" on One of One item page */
+    /* CTA button on mobile */
+  }
+  .grid-container .grid-item h4 {
+    position: relative;
+    border: 2px solid #ff0098;
+    margin-top: 1rem;
+    position: relative;
+    padding: 1rem;
+    color: #ff0098;
+    font-weight: 800;
+  }
+  .grid-container .grid-item h3 {
+    font-size: 2rem;
+    color: #ff0098;
+  }
+  .grid-container .grid-item p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
   }
   .grid-container .grid-item a.contact {
     text-decoration: underline;
@@ -38,42 +54,13 @@
     margin: 0;
     font-weight: 600;
   }
-  .grid-container .grid-item h3 {
-    font-size: 2rem;
-    color: #ff0098;
-  }
   .grid-container .grid-item a.cta {
     position: relative;
     margin-top: 1rem;
     display: inline-block;
     background: #ff0098;
     padding: 1rem;
-    color: white;
-    font-weight: 800;
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  .grid-container .grid-item p {
-    margin-top: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
-  }
-  .grid-container .grid-item h4 {
-    position: relative;
-    border: 2px solid #ff0098;
-    margin-top: 1rem;
-    position: relative;
-    padding: 1rem;
-    color: #ff0098;
-    font-weight: 800;
-  }
-  .grid-container .grid-item a.cta {
-    position: relative;
-    margin-top: 1rem;
-    display: inline-block;
-    background: #ff0098;
-    padding: 1rem;
-    color: white;
+    color: #ffffff;
     font-weight: 800;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
@@ -81,44 +68,31 @@
   .grid-container .grid-item a.cta:active {
     top: 6px;
   }
+  .grid-container .imgBx {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem auto;
+    border: 2px solid black;
+  }
+  .grid-container .imgBx img {
+    width: 100%;
+    height: 100%;
+  }
   .grid-container .imgBx2 {
     position: relative;
-    margin-top: 1.5rem;
-    width: 300px;
-    height: 75px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem auto;
     border: 2px solid black;
   }
   .grid-container .imgBx2 img {
     width: 100%;
     height: 100%;
   }
-  .grid-container .imgBx {
-    position: relative;
-    margin-top: 1.5rem;
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .grid-container .imgBx img {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 @media (min-width: 801px) {
-  header {
-    width: 100%;
-  }
-  .icon {
-    display: none;
-  }
-  nav .mainMenu li a:hover {
-    background: #ff0098;
-    font-size: 1.6rem;
-  }
   /* MAIN GRID STYLES */
   .grid-container {
     min-height: 100%;
@@ -182,6 +156,16 @@
   img {
     width: 100%;
     height: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .icon {
+    display: none;
+  }
+  nav .mainMenu li a:hover {
+    background: #ff0098;
+    font-size: 1.6rem;
   }
 }
 
