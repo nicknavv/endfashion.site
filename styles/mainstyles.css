@@ -123,6 +123,7 @@ header {
   border-bottom: 6px solid white;
   text-align: center;
   padding: 15px;
+  width: 100%;
 }
 
 .main-nav {
@@ -244,6 +245,8 @@ footer {
   text-align: center;
   padding: 15px;
   position: absolute;
+  width: 100%;
+  line-height: 2rem;
 }
 
 footer a {
