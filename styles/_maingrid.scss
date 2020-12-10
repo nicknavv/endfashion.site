@@ -1,4 +1,8 @@
 @media (min-width: 801px) {
+  header {
+    width: 100%;
+  }
+
   /* MAIN GRID STYLES */
 
   .grid-container {
@@ -13,6 +17,16 @@
     grid-template-rows: repeat(3, 27rem);
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  }
+
+  h4 {
+    position: relative;
+    border: 2px solid $hotpink;
+    margin-top: 1rem;
+    position: relative;
+    padding: 1rem;
+    color: $hotpink;
+    font-weight: 800;
   }
 
   .grid-item {
