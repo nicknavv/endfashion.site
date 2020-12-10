@@ -7,6 +7,11 @@
     display: none;
   }
 
+  nav .mainMenu li a:hover {
+    background: $hotpink;
+    font-size: 1.6rem;
+  }
+
   /* MAIN GRID STYLES */
 
   .grid-container {
