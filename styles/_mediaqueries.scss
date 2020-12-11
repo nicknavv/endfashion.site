@@ -1,43 +1,51 @@
 @media (max-width: 800px) {
-  /* MOBILE GRID STYLES */
+  /* GLOBAL Mobile Grid Styles */
 
-  .grid-container {
-    min-height: 100%;
-    width: 90%;
-    margin: 1rem auto;
-    display: grid;
-    gap: 1rem;
+  .grid-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
     position: relative;
+    border: 2px solid black;
 
-    .grid-item {
-      width: 100%;
-      text-align: center;
-      padding: 1rem;
+    h3 {
+      font-size: 2rem;
+      color: $hotpink;
+    }
+
+    h4 {
       position: relative;
-      border: 2px solid black;
+      border: 2px solid $hotpink;
+      margin-top: 1rem;
+      position: relative;
+      padding: 1rem;
+      color: $hotpink;
+      font-weight: 800;
+    }
 
-      h3 {
-        font-size: 2rem;
-        color: $hotpink;
+    p {
+      margin-top: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+    }
+
+    /* CTA button on mobile */
+
+    a.cta {
+      position: relative;
+      margin-top: 1rem;
+      display: inline-block;
+      background: $hotpink;
+      padding: 1rem;
+      color: #ffffff;
+      font-weight: 800;
+      transition: all 0.1s ease-in-out;
+
+      &:active {
+        top: 6px;
       }
 
-      h4 {
-        position: relative;
-        border: 2px solid $hotpink;
-        margin-top: 1rem;
-        position: relative;
-        padding: 1rem;
-        color: $hotpink;
-        font-weight: 800;
-      }
-
-      p {
-        margin-top: 1rem;
-        line-height: 1.5rem;
-        font-weight: 600;
-      }
-
-      /* "Contact Us" hyperlinlk on Photography page */
+      /* "Contact Us" hyperlink on Photography page */
 
       a.contact {
         text-decoration: underline;
@@ -58,26 +66,9 @@
         margin: 0;
         font-weight: 600;
       }
-
-      /* CTA button on mobile */
-
-      a.cta {
-        position: relative;
-        margin-top: 1rem;
-        display: inline-block;
-        background: $hotpink;
-        padding: 1rem;
-        color: #ffffff;
-        font-weight: 800;
-        transition: all 0.1s ease-in-out;
-
-        &:active {
-          top: 6px;
-        }
-      }
     }
 
-    /* Image container and img styles */
+    /* Image container and styling */
 
     .imgBx {
       position: relative;
@@ -93,6 +84,8 @@
       }
     }
 
+    /* Long sticker image container and styling */
+
     .imgBx2 {
       position: relative;
       width: 20rem;
@@ -106,5 +99,23 @@
         height: 100%;
       }
     }
+  }
+
+  /* INDEX GRID Styles */
+
+  .grid-container,
+  .grid-container-collection,
+  .grid-container-about,
+  .grid-container-contact,
+  .grid-container-apparel,
+  .grid-container-apparel-c1,
+  .grid-container-photography,
+  .grid-container-stickers {
+    min-height: 100%;
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    position: relative;
   }
 }
