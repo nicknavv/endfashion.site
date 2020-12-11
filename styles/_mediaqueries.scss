@@ -1,5 +1,23 @@
 @media (max-width: 800px) {
-  /* GLOBAL Mobile Grid Styles */
+  /* GLOBAL GRID Styles */
+
+  .grid-container,
+  .grid-container-collection,
+  .grid-container-about,
+  .grid-container-contact,
+  .grid-container-apparel,
+  .grid-container-apparel-c1,
+  .grid-container-photography,
+  .grid-container-stickers {
+    min-height: 100%;
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+  }
+
+  /* Global Mobile Grid Items */
 
   .grid-item {
     width: 100%;
@@ -99,23 +117,5 @@
         height: 100%;
       }
     }
-  }
-
-  /* INDEX GRID Styles */
-
-  .grid-container,
-  .grid-container-collection,
-  .grid-container-about,
-  .grid-container-contact,
-  .grid-container-apparel,
-  .grid-container-apparel-c1,
-  .grid-container-photography,
-  .grid-container-stickers {
-    min-height: 100%;
-    width: 90%;
-    margin: 1rem auto;
-    display: grid;
-    gap: 1rem;
-    position: relative;
   }
 }

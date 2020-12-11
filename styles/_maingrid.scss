@@ -1,5 +1,25 @@
 @media (min-width: 801px) {
-  /* GLOBAL DESKTOP Grid Styles */
+  /* GLOBAL GRID STYLES */
+
+  .grid-container,
+  .grid-container-collection,
+  .grid-container-about,
+  .grid-container-contact,
+  .grid-container-apparel,
+  .grid-container-apparel-c1,
+  .grid-container-photography,
+  .grid-container-stickers {
+    min-height: 100%;
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Global Desktop Grid Items */
   .grid-item {
     width: 100%;
     text-align: center;
@@ -63,25 +83,7 @@
     background: $hotpink;
   }
 
-  /* MAIN GRID STYLES */
-
-  .grid-container,
-  .grid-container-collection,
-  .grid-container-about,
-  .grid-container-contact,
-  .grid-container-apparel,
-  .grid-container-apparel-c1,
-  .grid-container-photography,
-  .grid-container-stickers {
-    min-height: 100%;
-    width: 90%;
-    margin: 1rem auto;
-    display: grid;
-    gap: 1rem;
-    position: relative;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-  }
+  /* Specific styling for grid items */
 
   .item-1 {
     grid-column: 1 / 3;
