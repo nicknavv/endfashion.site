@@ -9,6 +9,7 @@
     display: grid;
     gap: 1rem;
     position: relative;
+    /* Image container and img styles */
   }
   .grid-container .grid-item {
     width: 100%;
@@ -20,6 +21,10 @@
     /* "See details" on One of One item page */
     /* CTA button on mobile */
   }
+  .grid-container .grid-item h3 {
+    font-size: 2rem;
+    color: #ff0098;
+  }
   .grid-container .grid-item h4 {
     position: relative;
     border: 2px solid #ff0098;
@@ -28,10 +33,6 @@
     padding: 1rem;
     color: #ff0098;
     font-weight: 800;
-  }
-  .grid-container .grid-item h3 {
-    font-size: 2rem;
-    color: #ff0098;
   }
   .grid-container .grid-item p {
     margin-top: 1rem;
@@ -93,22 +94,36 @@
 }
 
 @media (min-width: 801px) {
+  .icon {
+    display: none;
+  }
+  nav .mainMenu li a:hover {
+    background: #ff0098;
+  }
   /* MAIN GRID STYLES */
   .grid-container {
     min-height: 100%;
-    margin-top: 1rem;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem auto;
     display: -ms-grid;
     display: grid;
     gap: 1rem;
     position: relative;
-    -ms-grid-rows: (27rem)[3];
-        grid-template-rows: repeat(3, 27rem);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+  }
+  .grid-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    border: 2px solid black;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #ff0098;
   }
   h4 {
     position: relative;
@@ -119,28 +134,19 @@
     color: #ff0098;
     font-weight: 800;
   }
-  .grid-item {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    border: 2px solid black;
-  }
-  h3 {
-    font-size: 2rem;
-    color: #ff0098;
-    margin-top: 1rem;
-  }
   p {
     margin-top: 1rem;
     line-height: 1.5rem;
+    font-weight: 600;
   }
+  /* CTA button styles */
   a.cta {
     position: relative;
     margin-top: 1rem;
     display: inline-block;
     background: #ff0098;
     padding: 1rem;
-    color: white;
+    color: #ffffff;
     font-weight: 800;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
@@ -148,24 +154,12 @@
   .imgBx {
     position: relative;
     width: 20rem;
-    height: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
+    height: 20rem;
+    margin: 1rem auto;
   }
   img {
     width: 100%;
     height: 100%;
-  }
-  header {
-    width: 100%;
-  }
-  .icon {
-    display: none;
-  }
-  nav .mainMenu li a:hover {
-    background: #ff0098;
-    font-size: 1.6rem;
   }
 }
 

@@ -16,6 +16,11 @@
       position: relative;
       border: 2px solid black;
 
+      h3 {
+        font-size: 2rem;
+        color: $hotpink;
+      }
+
       h4 {
         position: relative;
         border: 2px solid $hotpink;
@@ -24,11 +29,6 @@
         padding: 1rem;
         color: $hotpink;
         font-weight: 800;
-      }
-
-      h3 {
-        font-size: 2rem;
-        color: $hotpink;
       }
 
       p {
@@ -76,6 +76,8 @@
         }
       }
     }
+
+    /* Image container and img styles */
 
     .imgBx {
       position: relative;
